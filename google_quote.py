@@ -1,4 +1,4 @@
-import time, cs
+import time
 import datetime
 from urllib.request import urlopen
 
@@ -21,7 +21,7 @@ class Quote(object):
 	
 	def to_csv(self):
 		return ''.join(["{0},{1},{2},{3:.2f},{4:.2f},{5:.2f},{6:.2f},{7}\n".format(self.symbol, 
-			self.date[bar].strftime('%Y-%m-%d'),self.time[bar].strftime('%H:%M:%S').
+			self.date[bar].strftime('%Y-%m-%d'),self.time[bar].strftime('%H:%M:%S'),
 			self.open_[bar],self.high[bar],self.low[bar],self.close[bar],self.volume[bar])
 			for bar in range(len(self.close))])
 	
