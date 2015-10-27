@@ -1,2 +1,2 @@
 # machine-learning-trader
-Proof of concept for a machine learning trader utilizing
+Proof of concept for a machine learning trader
