@@ -63,6 +63,3 @@ class GoogleIntradayQuote(Quote):
 			dt = datetime.datetime.fromtimestamp(day + (interval_seconds * offset))
 			self.append(dt, open_, high, low, close, volume)
 
-if __name__ == '__main__':
-	q = GoogleIntradayQuote('spy', 300, 30)
-	print(q)
